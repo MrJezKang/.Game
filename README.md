@@ -6,9 +6,11 @@
 │   ├── .exe
 │   └── SDL2.dll                          
 ├── assets/                  
-│   └── sprites/
-│       └── player/
-│             └── placeholder.png
-│   
+│   ├── sprites/
+│   │   └── player/
+│   │         └── placeholder.png
+│   └── texture/
+│       └── object
+│           └── Box_PlaceHolder.png
 └── src/                     
      └── main.cpp
