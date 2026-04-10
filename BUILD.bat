@@ -5,9 +5,9 @@ setlocal enabledelayedexpansion
 set COMPILER=C:\msys64\ucrt64\bin\g++.exe
 set INCLUDE_PATH=-I C:/msys64/ucrt64/include
 set LIB_PATH=-L C:/msys64/ucrt64/lib
-set LIBS=-lmingw32 -lSDL2main -lSDL2
+set LIBS=-lmingw32 -lSDL2main -lSDL2 -lole32 -luuid -lwindowscodecs
 set OUTPUT=bin\game.exe
-set SOURCE=src\main.cpp
+set SOURCE=src\main.cpp src\ObjectLoader.cpp src\TextureLoader.cpp src\GameObject.cpp
 
 :: --- BUILD PROCESS ---
 echo Starting Build: %date% %time%

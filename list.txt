@@ -1,0 +1,154 @@
+Engine (in progress){
+	//Handle main logic and simulation.
+	Thread (1st)[ Handles rendering / Graphics. All Z-index layer ],
+	Thread (2nd)[ Core Simulation, Physics, collisions, Statics Objects (Furniture) ],
+	Thread (3rd)[ Handles AI Simulation / Calculations ],
+	Thread (4th)[ Handles Map Loading, Chunk Load/Unload ],
+	Thread (5th)[ Handles Quick Instantaneous Ragdoll, Collisions, Static Object Impact, and Static Surface Impact ]
+}
+Sub Engine (hiatus){
+	Map Generator,
+	World Events handler,
+	Entities/Skeleton Builder [ Stats – Changed based on Map and Current events – hiatus ],
+	Entities Spawner,
+	Game Save handler [ Save the Generated World (Hiatus) and Generated Entity ],
+	Game Save Load Handler [ Read Game Save File and Continue ]
+}
+ 
+Planed Features (hiatus){
+	Character / Entities[
+		Ragdoll[ Falling, Stumble, Dragged, Flung, Death ],
+		Soft Body Imitations | Lattice Constrains[ Glutes, Breast, Thighs, Fats (If Applicable), Loss Skin (if Applicable) ],
+		Animations + Xray View[ Assault(Adult Pack), Masturbation(Adult Pack), Rape(Adult pack) ],
+		Fluid Imitations + Adhesion[ Ejaculation(Adult pack), Dripping Out(Adult Pack), Blood[ Slash, Splash, Leak ] ],
+		Cloth Physics[ Waving On air, Move with character, React with wind, hair / Fur ],
+		Heat Cycle | Hormone,
+		Territorial,
+		Metabolism,
+		Prey / Predator,
+		Passive, Hostile, Passive Hostile
+		Character Creation
+	],
+	Environment[
+		Day / Night Cycle,
+		Ecosystems,
+		Parallax Scrolling,
+		Chunks,
+		Fluid[ Ripple / Wave / Flowing / Current, Pond, Sea, River, Falls, Shower ]
+		Locations{
+			Urban[ City, Factories, Warehouse, Stores, Malls, Sewers / Maintenance Tunnel, Suburban ],
+			Rural[ Small Towns, Farm Towns, Large Scale Factory, Large Scale Warehouse, Farmhouse, Refineries, Power Plants ],
+			Wilderness[ Plains, Forest, Swamp, Marsh, Mountains, Cliffs, Caves, Mineshafts, Undisclosed Laboratories ]
+		}
+		Cloth Physics[ Waving Flag, Tabletop if outside, Curtains, Hanged Cloth ],
+		Destructible Building or Static Wall and Objects
+	],
+	Mechanics[
+		Survival[ Hunger, Hydration, Health, Mental, Fatigue, Recreation ],
+		Grab[ Assault(Adult Pack), Rape(Adult Pack), Drag],
+		Grid Inventory,
+		Building,
+		Camping,
+		Map,
+		Driving(Unsure),
+		Sleep | Fast Forward,
+		Mele Combat,
+		Range Combat,
+		Vehicle Combat,
+		Raid,
+		Safe Zone
+	],
+	2D Aesthetic,
+	Puzzle,
+	Exploration,
+	2.5D,
+	Simulation,
+	Entity Ecosystem[ Ecosystem, Entity Routine, Word Event ]
+}
+
+Development{
+	Use Low-Cost High immersion,
+	Take Advantage to pre-made assets for performance,
+	Inspirations[ Global Mutations(Game Based On), Hidden Deep, Mad Island ]
+}
+
+
+
+
+
+
+Engine(in progress){
+    //Handle main logic and simulation.
+    1st Main[ Input, Rendering ],
+    2nd Simulations[ Physics, Collisions, Ragdoll, AI Instantaneous ],
+	3rd Worker[ Pathfinding, Chunk Loading, AI Heavy Calculation ]
+}
+
+Sub Engine(Pause){
+    Map Generator,
+	World Events handler,
+	Entities/Skeleton Builder[ Stats – Changed based on Map and Current events ],
+	Entities Spawner,
+	Game Save handler[ Save the Generated World and Generated Entity ],
+	Game Save Load Handler[ Read Game Save File and Continue ]
+}
+
+Planed Features(Pause){
+	Character / Entities[
+		Ragdoll[ Falling, Stumble, Dragged, Flung, Death ],
+		Soft Body(Fake)[ Glutes, Breast, Thighs, Fats (If Applicable), Loss Skin (if Applicable) ],
+		Animations + Xray View[ Assault(Adult Pack), Masturbation(Adult Pack), Rape(Adult pack) ],
+		Fluid (Fake)[ Ejaculation(Adult pack), Dripping Out(Adult Pack), Blood[ Slash, Splash, Leak ] ],
+		Cloth Physics[ Waving On air, Move with character, React with wind, hair / Fur ],
+		Heat Cycle | Hormone(Adult Pack),
+		Territorial,
+		Metabolism,
+		Prey / Predator,
+		Passive, Hostile, Passive Hostile
+		Character Creation
+	],
+	Environment[
+		Day / Night Cycle,
+		Ecosystems,
+		Parallax Scrolling,
+		Chunks,
+		Fluid(Fake) [ Ripple / Wave / Flowing / Current, Pond, Sea, River, Falls, Shower ]
+		Locations{
+			Urban[ City, Factories, Warehouse, Stores, Malls, Sewers / Maintenance Tunnel, Suburban ],
+			Rural[ Small Towns, Farm Towns, Large Scale Factory, Large Scale Warehouse, Farmhouse, Refineries, Power Plants ],
+			Wilderness[ Plains, Forest, Swamp, Marsh, Mountains, Cliffs, Caves, Mineshafts, Undisclosed Laboratories ]
+		}
+		Cloth Physics(Fake)[ Waving Flag, Tabletop if outside, Curtains, Hanged Cloth ],
+		Destructible Building or Static Wall and Objects
+	],
+	Mechanics[
+		Survival[ Hunger, Hydration, Health, Mental, Fatigue, Recreation ],
+		Grab[ Assault(Adult Pack), Rape(Adult Pack), Drag],
+		Grid Inventory,
+		Building,
+		Camping,
+		Map,
+		Driving(Unsure),
+		Sleep | Fast Forward,
+		Mele Combat,
+		Range Combat,
+		Vehicle Combat,
+		Raid,
+		Safe Zone
+	],
+	2D Aesthetic,
+	Puzzle,
+	Exploration,
+	2.5D,
+	Simulation,
+	Entity Ecosystem[ Ecosystem, Entity Routine, Word Event ]
+}
+
+Development{
+	Use Low-Cost High immersion,
+	Take Advantage to pre-made assets for performance,
+	Inspirations[ Global Mutations(Game Based On), Hidden Deep, Mad Island ]
+}
+
+
+

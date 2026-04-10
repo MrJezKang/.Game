@@ -1,3 +1,8 @@
+well its not working 
+
+lest go modular
+
+Base Rendering
 #include <SDL2/SDL.h>
 #include <stdio.h>
 #include <vector>
@@ -55,9 +60,7 @@ int main(int argc, char* argv[]){
             }
         }
 
-        SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255); // Set the drawing color to black
         SDL_RenderClear(renderer); // Clear the screen with the current drawing color (default is black)
-
 
         SDL_RenderPresent(renderer); // Render the current frame to the screen
 
@@ -65,8 +68,24 @@ int main(int argc, char* argv[]){
 
     SDL_DestroyRenderer(renderer);
     SDL_DestroyWindow(window);
-
     SDL_Quit();
     return 0;
 
 }
+
+
+
+where a current goal is to render object 
+with the texture placeholder
+
+An object data called box contains box details
+like texture path and size for now
+
+a logic load that box or a spawner
+
+then the engine render that object 
+as for the Plan
+
+Lets create a simple object Creator and load the data on the engine
+for the object data, it's surely put on the data folder and what can you suggest?
+for the render its job is to Render like in the plan list
