@@ -14,7 +14,6 @@ int main(int argc, char* argv[]){
         printf("SDL could not initialize! SDL_Error: %s\n", SDL_GetError());
         return 1;
     }
-    
 
     //Window creation
     SDL_Window* window = SDL_CreateWindow(
@@ -45,6 +44,8 @@ int main(int argc, char* argv[]){
     bool LoopActive = true;
     SDL_Event e;
 
+    SDL_Rect box = {300, 200, 200, 150};
+
     //==============================================MAIN LOOP==============================================
     //==============================================THREAD 1===============================================
     while(LoopActive){
@@ -58,6 +59,8 @@ int main(int argc, char* argv[]){
         SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255); // Set the drawing color to black
         SDL_RenderClear(renderer); // Clear the screen with the current drawing color (default is black)
 
+        SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
+        SDL_RenderFillRect(renderer, &box);
 
         SDL_RenderPresent(renderer); // Render the current frame to the screen
 
