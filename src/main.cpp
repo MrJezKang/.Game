@@ -1,6 +1,8 @@
 #include <SDL2/SDL.h>
 #include <stdio.h>
 #include <vector>
+#include "WorldRenderer.h"
+#include "WorldGenerator.h"
 
 //default Windowed Screen Size
 const int SCREEN_WIDTH = 800;
@@ -44,7 +46,9 @@ int main(int argc, char* argv[]){
     bool LoopActive = true;
     SDL_Event e;
 
-    SDL_Rect box = {300, 200, 200, 150};
+   World world;
+   GenerateTestWorld(world);
+
 
     //==============================================MAIN LOOP==============================================
     //==============================================THREAD 1===============================================
@@ -56,11 +60,10 @@ int main(int argc, char* argv[]){
             }
         }
 
-        SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255); // Set the drawing color to black
+        SDL_SetRenderDrawColor(renderer, 20, 20, 20, 255); // Set the drawing color to black
         SDL_RenderClear(renderer); // Clear the screen with the current drawing color (default is black)
 
-        SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
-        SDL_RenderFillRect(renderer, &box);
+        RenderWorld(renderer, world);
 
         SDL_RenderPresent(renderer); // Render the current frame to the screen
 

@@ -7,7 +7,7 @@ set INCLUDE_PATH=-I C:/msys64/ucrt64/include
 set LIB_PATH=-L C:/msys64/ucrt64/lib
 set LIBS=-lmingw32 -lSDL2main -lSDL2 -lole32 -luuid -lwindowscodecs
 set OUTPUT=bin\game.exe
-set SOURCE=src\main.cpp 
+set SOURCE=src\main.cpp src\WorldRenderer.cpp src\WorldGenerator.cpp
 
 :: --- BUILD PROCESS ---
 echo Starting Build: %date% %time%
